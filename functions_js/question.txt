@@ -1,0 +1,42 @@
+Perfect! 👏 Since you’re learning First-Class Functions in JavaScript, let’s strengthen your understanding step by step.
+
+⸻
+
+⚡ Quick Reminder:
+
+A first-class function means functions in JS are treated like values —
+✅ You can store them in variables
+✅ Pass them as arguments
+✅ Return them from other functions
+
+⸻
+
+🧠 Level 1 – Basics (Identify & Understand)
+	1.	Write a function named sayHello that prints "Hello!".
+	•	Store it inside a variable greet and call greet().
+	2.	Create a function welcome() and assign it to another variable msg.
+	•	Delete the original welcome variable and see if you can still call the function.
+	3.	Create two functions:
+	•	morning() → logs "Good Morning"
+	•	evening() → logs "Good Evening"
+Store one of them in a variable called currentTimeMessage and call it.
+	4.	Write a function logFunction(fn) that takes a function as an argument and executes it.
+	•	Try calling it as logFunction(morning).
+
+⸻
+
+💡 Level 2 – Functions as Arguments
+	5.	Write a function runThreeTimes(fn) that executes any function three times.
+	•	Pass a function that logs "Simar is learning JS!".
+	6.	Create a function calculate(fn, a, b) where fn is a function that performs an operation (like add, subtract).
+	•	Define separate functions add(x, y) and multiply(x, y) and pass them into calculate.
+	7.	Write a function applyOperation(fn, num) that applies fn to num and returns the result.
+	•	Test with square and double functions.
+
+⸻
+
+🔁 Level 3 – Returning Functions
+	8.	Write a function outer() that returns another function inner() which logs "Inner function called!".
+	•	Store the result in a variable and call it.
+	9.	Create a function makeMultiplier(factor) that returns a function which multiplies any number by that factor.
+	•	Example:

@@ -238,9 +238,9 @@ function good_wlla() {
         console.log(" hnji mai hi aa  good thale wlla function ");
     }
 }
-let  storekro=upr_wlla();
+let storekro = upr_wlla();
 storekro();
-storekro=good_wlla();
+storekro = good_wlla();
 storekro();
 
 // const storekro = upr_wlla();
@@ -251,3 +251,116 @@ storekro();
 // here i also understand the concept of the const and let being used before the referenced variable 
 
 // ❤️❤️ practice questions first class functions
+
+// 🧠 Level 1 – Basics (Identify & Understand)
+// 	1.	Write a function named sayHello that prints "Hello!".
+// 	•	Store it inside a variable greet and call greet().
+// 	2.	Create a function welcome() and assign it to another variable msg.
+// 	•	Delete the original welcome variable and see if you can still call the function.
+{
+    let greet = function sayHello() { console.log("hello"); }
+    greet();
+}
+
+
+// {
+//     let msg = function welcome1() {
+//         { console.log("welcome"); }
+//     }
+//     msg = null;
+//     msg();
+//     // will get type error here 
+// }
+
+// 	3.	Create two functions:
+// 	•	morning() → logs "Good Morning"
+// 	•	evening() → logs "Good Evening"
+// Store one of them in a variable called currentTimeMessage and call it.
+// 	4.	Write a function logFunction(fn) that takes a function as an argument and executes it.
+// 	•	Try calling it as logFunction(morning).
+
+function morning() {
+    console.log('"Good Morning"');
+}
+{
+    let currentTimeMessage = function evening() {
+        console.log('"Good Evening"');
+    }
+    currentTimeMessage();
+}
+
+function logFunction(fn) {
+    fn();
+    fn();
+    fn();
+}
+logFunction(morning);
+
+
+// 💡 Level 2 – Functions as Arguments
+// 	5.	Write a function runThreeTimes(fn) that executes any function three times.
+// 	•	Pass a function that logs "Simar is learning JS!".
+
+
+function learning() {
+    console.log('Simar is learning JS!.');
+}
+function runThreeTimes(fn) {
+    fn();
+    fn();
+    fn();
+}
+runThreeTimes(learning);
+
+// 	6.	Create a function calculate(fn, a, b) where fn is a function that performs an operation (like add, subtract).
+// 	•	Define separate functions add(x, y) and multiply(x, y) and pass them into calculate.
+{
+    function add(x,y){
+        console.log(`${x + y}`);       
+    }
+ function multiply(x,y){
+        console.log(`${x * y}`);       
+    }
+
+
+function calculate(fn,a,b){
+    fn(a,b);
+}
+calculate(add,4,4);
+calculate(multiply,4,4);
+}
+
+	// 7.	Write a function applyOperation(fn, num) that applies fn to num and returns the result.
+	// •	Test with square and double functions.⏳
+{
+function applyOperation(fn) {
+  return function(num) {
+    return fn(num); // inner function applies fn to num
+  };
+}
+
+function square(x) {
+  return x * x;
+}
+
+function double(x) {
+  return x * 2;
+}
+
+const doSquare = applyOperation(square);
+const doDouble = applyOperation(double);
+
+console.log(doSquare(4));  // → 16
+console.log(doDouble(4));  // → 8
+}
+
+	// 8.	Write a function outer() that returns another function inner() which logs "Inner function called!".
+	// •	Store the result in a variable and call it.
+
+    function outer(){
+        return function inner(){
+            console.log("inner function called !");
+        }
+    }
+    let store =outer();
+    store();

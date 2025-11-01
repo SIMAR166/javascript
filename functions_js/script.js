@@ -364,3 +364,132 @@ console.log(doDouble(4));  // → 8
     }
     let store =outer();
     store();
+
+    // 🧩 Q1. (Pure)
+
+// Write a function multiply(a, b) that returns the product of two numbers.
+// Check if it’s pure or impure and explain why.
+
+// Hint: Does it depend on or change anything outside?
+
+// Expected output:multiply(2, 3); // 6
+// multiply(2, 3); // always 6
+{
+function multiply(a,b){
+    return a*b; 
+}
+ console.log(multiply(2,3));
+}
+// no it does not depends upon the anything outside so its a pure function 
+
+// 🧩 Q2. (Impure)
+
+// Write a function that keeps adding to a global total each time it’s called.
+
+// Example:
+// let total = 0;
+// function addToTotal(num) {
+//   // your code
+// }
+
+// addToTotal(5);  // 5
+// addToTotal(10); // 15
+
+// Then answer:
+// 👉 Why is this function impure? bcz it modify the global variable i.e why it is a impure function 
+let total = 0;
+function addToTotal(num) {
+    total=total+num;
+    console.log(total);
+}
+
+addToTotal(5);  // 5
+addToTotal(10); // 15
+
+
+// 🧩 Q3.
+// Predict the output and explain why:
+{
+let name = "Simar";
+function outer() {
+  let name = "Kang";
+  function inner() {
+   
+  }
+  console.log(name);
+  inner();
+}
+outer();
+ 
+}
+// Think: which name does inner() use — outer’s or global’s?
+// kang i think because outer is the direct parent of the inner 
+
+// 🧩 Q4.
+
+// Try modifying the code:
+// 	•	Move console.log(name) outside inner().
+// 	•	Can you still access name?
+// Explain why or why not. 
+// ans i am still getting the result as i am still in the outer parent section but if i am outside the outer function then i will get the output as the simar bcz of the global scope 
+
+
+// 🧩 Q5.
+
+// Create a counter function using closure.
+function createCounter() {
+  let count=0;
+  return function counter(){
+    count+=1;
+    console.log(count);
+  }
+}
+
+const counter = createCounter();
+counter(); // 1
+counter(); // 2
+counter(); // 3
+// Then explain what’s happening behind the scenes.
+// the count variable hold its previous value and get incremented as the function is being called 
+
+// 🧩 Q6.
+// What will be the output and why?
+{
+function outer() {
+  let message = "Hello";
+
+  return function inner() {
+    message = "Hi"; // changed outer variable
+    console.log(message);
+  };
+}
+
+const greet1 = outer(); 
+const greet2 = outer();
+
+greet1(); // ?
+greet1(); // ?
+greet2(); // ?
+}
+// Think:
+// 	•	Does each outer() call get its own copy of message?
+// 	•	Or do they share one variable?
+// they share one variable 
+
+// 🧠 Optional Challenge (Bonus)
+
+// Write a pure version of the counter function (so it doesn’t depend on closure or change outer variables).
+// Hint: It should take a number and return the next number, without remembering previous ones.
+{
+function createCounter() {
+  return function counter(count){
+    count+=1;
+    console.log(count);
+  }
+}
+
+const counter = createCounter();
+counter(5); 
+counter(20); 
+counter(16); 
+}

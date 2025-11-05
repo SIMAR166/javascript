@@ -182,7 +182,7 @@
 //         console.log(user_input);
 //       count_negative++;
 //     }
- 
+
 //  }
 //      console.log(` the no of positive numbers are ${count_positive}`);
 //  console.log(` the no of negative  numbers are ${count_negative}`);
@@ -192,3 +192,22 @@
 // Start with ₹1000 balance. Ask withdrawal amount 3 times.
 // If enough balance → deduct
 // Else → print “Insufficient balance”
+
+// atm  - 3  balance 
+let total_amount = 10000;
+let fix = 1000
+ console.log(` total amount of cash in the atm ${total_amount}`);
+ console.log( `first withdraw ${fix}`);
+  console.log(` ${total_amount - fix} => ${total_amount} `);
+for (withdrawls = 0; withdrawls < 3; withdrawls++) {
+   
+    let next_amount = +prompt("enter the next amount you need");
+    if (next_amount < total_amount) {
+        console.log(`  ${total_amount}- ${next_amount} = ${total_amount-next_amount}` );
+    }
+
+   else {
+        console.log("insufficient amount");
+        break;
+    }
+}

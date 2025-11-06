@@ -28,6 +28,7 @@
 //         }
 //     }
 
+    
 // 😁🍻 think about the approach first 
 // 8. Print multiplication table of 5
 // Use loop to print 5 × 1 to 5 × 10.
@@ -38,18 +39,7 @@
 // }
 
 // 😄
-// 9. Count how many numbers between 1 and 15 are greater than 8
-// Loop and count conditionally.
 
-//  if between 1 and 15 8 count 
-
-// let count = 0;
-// for(let i=1;i<15;i++){
-//     if(i > 8){
-//         count++;
-//     }
-// }
-// console.log(count);
 
 // 😁🍻
 // 10. Ask user for password and print access status
@@ -193,21 +183,16 @@
 // If enough balance → deduct
 // Else → print “Insufficient balance”
 
-// atm  - 3  balance 
-let total_amount = 10000;
-let fix = 1000
- console.log(` total amount of cash in the atm ${total_amount}`);
- console.log( `first withdraw ${fix}`);
-  console.log(` ${total_amount - fix} => ${total_amount} `);
-for (withdrawls = 0; withdrawls < 3; withdrawls++) {
-   
-    let next_amount = +prompt("enter the next amount you need");
-    if (next_amount < total_amount) {
-        console.log(`  ${total_amount}- ${next_amount} = ${total_amount-next_amount}` );
-    }
-
-   else {
-        console.log("insufficient amount");
-        break;
-    }
+let balance = 1000;
+for ( let i = 1 ; i <=3 ; i++){
+  let  withdraw= +prompt("enter the amount you want to withdraw");
+  console.log(` amount ${i} that the user wants to withdraw ${withdraw}`);
+  if(withdraw<=balance){
+    balance-= withdraw;
+    console.log(` remaining balance  = ${balance}`);
+  }
+  else{
+    console.log("insufficient amount");
+  }
 }
+

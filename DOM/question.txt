@@ -1,0 +1,27 @@
+
+⚡ Event Listeners
+	25.	Add a click event to a button that changes some text.
+	26.	When mouse enters a div, change its background.
+	27.	When mouse leaves, restore it.
+	28.	Add a keypress event to an input and log the key pressed.
+	29.	On form submit, prevent page refresh and log form values.
+
+⸻
+
+
+
+⸻
+
+🎯 Final Task (Mini Project)
+	32.	Create a Todo List:
+
+	•	Add tasks dynamically.
+	•	Remove tasks on click.
+	•	Toggle completed state via classList.
+
+⸻
+
+When you complete these, your DOM fundamentals will be rock solid.
+
+When you’re done → Send your code and I’ll review it like a senior developer.
+Deal? 💪🔥

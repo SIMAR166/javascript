@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 7rem;
+            user-select: none;
+        }
+       #pehla{
+            display: none;
+        }
+        .in{
+            background-color: green;
+            color:white;
+            display: inline-block;
+            padding: 1rem;
+            border-radius: 0.7rem;
+
+        }
+    </style>
+</head>
+<body>
+     <input type="text" placeholder="enter kro kush v ehdr ">
+     <h1>list of fruits avaiable in our shop</h1>
+     <select>
+        <option selected disabled> choose any fruit that you want to add in the bucket</option>
+        <option value="Apple">APPLE</option>
+        <option value="Mango">MANGO</option>
+        <option value="Banana">BANANA</option>
+        <option value="Pineapple">PINEAPPLE</option>
+        <option value="Litchi">LITCHI</option>
+     </select>
+     <h2 class="h2">i</h2>
+
+     <input id="pehla" type="file">
+      <div class="in">
+        <h4>upload files here</h4>
+     </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

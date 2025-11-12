@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f7ff;
+    font-family: sans-serif;
+}
+
+.grandparent, .parent, .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.grandparent {
+    width: 300px;
+    height: 300px;
+    background: lightcoral;
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+}

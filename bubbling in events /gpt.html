@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="gpt.css">
+</head>
+<body>
+  <main>
+    <form id="userForm" autocomplete="off">
+      <h2>📝 Registration Form</h2>
+
+      <div class="input-box">
+        <input id="name" type="text" name="name" placeholder="Enter username">
+        <div class="messagename"></div>
+      </div>
+
+      <div class="input-box">
+        <input id="password" type="password" name="password" placeholder="Enter password">
+        <div class="messagepass"></div>
+      </div>
+
+      <div class="input-box">
+        <input id="email" type="email" name="email" placeholder="Enter email">
+        <div class="messageemail"></div>
+      </div>
+
+      <div class="input-box">
+        <input id="age" type="number" name="age" placeholder="Enter age">
+        <div class="messageage"></div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="gpt.js"></script>
+</body>
+</html>

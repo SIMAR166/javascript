@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #5d55b5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+ button  {
+    padding:0.5rem;
+    background-color: purple;
+    color:white;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+}
+.dark{
+  background: black;
+  color: black;
+}
+.dark button {
+    padding:0.5rem;
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.game-container {
+    width: 380px;
+    background: #ffffffdd;
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.start { background: #32d968; color: white; }
+.start:hover { background: #27c55a; }
+
+.reset { background: #ff5252; color: white; }
+.reset:hover { background: #e64545; }
+
+.top-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    background: #f1f1ff;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.score h3 {
+    font-size: 16px;
+}
+.score p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Message */
+.message {
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+/* Choices */
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.choice {
+    width: 100px;
+    background: #ecebff;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.choice:hover {
+    transform: scale(1.05);
+    background: #d9d7ff;
+}
+
+.choice img {
+    width: 60px;
+    height: 60px;
+}
+
+.choice span {
+    display: block;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Show Both Choices */
+.show-choices {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.pick-icon {
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background: #f7f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.pick-icon img {
+    width:80%;
+}
+/* History */
+.history-box {
+    margin-top: 20px;
+    background: #f5f4ff;
+    padding: 12px;
+    border-radius: 12px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.history-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#historyList {
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+}

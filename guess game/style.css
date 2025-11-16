@@ -1,0 +1,128 @@
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BODY: Stadium Vibe */
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(120deg, #0a0f24, #001a33, #003566);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+/* MAIN CARD */
+.card {
+    width: 75%;
+    max-width: 1000px;
+    padding: 35px;
+    display: flex;
+    gap: 250px;
+    border-radius: 25px;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    backdrop-filter: blur(10px);
+
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.25),
+                0 0 50px rgba(0, 153, 255, 0.2);
+}
+/* LEFT LOGO */
+.logo-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* RIGHT DETAILS */
+.details {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Short Name (BIG & GLOWING) */
+.details h1 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #48ff00;
+    text-shadow:
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 35px #009dff;
+}
+
+/* Full Name (Bright & Clean) */
+.fullname {
+    margin-top: 12px;
+    font-size: 2rem;
+    color: #1b26c2;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Captain Name */
+.captain {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    color: #ffe66b;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(255, 230, 107, 0.9);
+}
+
+/* BUTTON */
+.btn-wrap {
+    margin-top: 25px;
+}
+
+button {
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff0080, #6a00ff);
+    color: white;
+    letter-spacing: 1px;
+
+    box-shadow: 
+        0 0 10px #ff00d9,
+        0 0 25px #6a00ff;
+    transition: 0.25s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.12);
+    box-shadow: 
+        0 0 20px #ff00d9,
+        0 0 40px #6a00ff;
+}
+

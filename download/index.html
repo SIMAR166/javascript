@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Song</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="card">
+
+        <p class="title">
+            Click the button to download 
+            <a href="#" class="file">song.mp3</a> file
+        </p>
+
+        <!-- FILE SIZE + SPEED (new UI) -->
+    
+
+        <div class="progress-box">
+            <div id="progressBar"></div>
+        </div>
+
+        <h1 id="percent">0%</h1>
+
+        <!-- MAIN BUTTON (Download / Resume / Download Again) -->
+        <button id="downloadBtn">Download</button>
+
+        <!-- NEW BUTTONS -->
+        <div class="controls">
+            <button id="pauseBtn" class="small-btn">Pause</button>
+            <button id="cancelBtn" class="small-btn red">Cancel</button>
+        </div>
+
+        <p class="status">
+            <a href="#" class="file">song.mp3</a> Download
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

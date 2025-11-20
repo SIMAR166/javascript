@@ -1,0 +1,119 @@
+/* small info */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Dark background */
+body {
+    background: rgba(0,0,0,0.85);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* White card box */
+.card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.85); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Heading text */
+.title {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.file {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Progress bar outer box */
+.progress-box {
+    width: 100%;
+    height: 14px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+/* Green bar (Width changes with JS) */
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+/* Percentage text */
+#percent {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Download button finished */
+#downloadBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #8BC34A;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Status text */
+.status {
+    margin-top: 12px;
+    color: #1e7e34;
+    font-size: 1rem;
+}
+.info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buttons Row */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+/* Small buttons */
+.small-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #00aaff;
+    color: white;
+    font-weight: 600;
+}
+
+.small-btn.red {
+    background: #ff4d4d;
+}

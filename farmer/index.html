@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>👨‍🌾 Farmer Expense Tracker</h1>
+
+        <div class="buttons">
+            <button class="expense-btn" data-category="Seeds" data-amount="500">Seeds ₹500</button>
+            <button class="expense-btn" data-category="Fertilizer" data-amount="1200">Fertilizer ₹1200</button>
+            <button class="expense-btn" data-category="Pesticide" data-amount="800">Pesticide ₹800</button>
+            <button class="expense-btn" data-category="Transport" data-amount="300">Transport ₹300</button>
+        </div>
+
+        <h2>Total: ₹<span id="total-display">0</span></h2>
+
+        <button id="undo-btn" class="undo">Undo Last Entry</button>
+
+        <ul id="expense-list"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

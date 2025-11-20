@@ -1,0 +1,116 @@
+ /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.post {
+    position: relative;
+    background-color: aqua;
+    width: 350px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%)  ; 
+    
+    font-size: 100px;
+    opacity: 0;
+                 /* These are required by you */
+    /* rotate: 0deg;
+    transition: all 0.4s ease-out;
+}
+
+.heart i {
+    color: transparent;
+    background-clip: text; 
+    -webkit-background-clip: text;   
+    background-image: linear-gradient(
+        to right,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    ); 
+}
+
+.caption {
+    margin-top: 12px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.post {
+    position: relative;
+    width: 350px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* --- INSTAGRAM HEART EFFECT --- */
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 120px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.4s ease;
+}
+
+.heart i {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+        to right,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+}
+
+.caption {
+    margin-top: 12px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
